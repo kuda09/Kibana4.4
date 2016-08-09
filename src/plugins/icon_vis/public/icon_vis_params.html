@@ -1,0 +1,20 @@
+<div class="form-group">
+  <label>Font Size - {{ vis.params.fontSize }}pt</label>
+  <input type="range" ng-model="vis.params.fontSize" class="form-control" min="12" max="120" />
+  <label>Icon Size - {{ vis.params.iconSize }}pt</label>
+  <input type="range" ng-model="vis.params.iconSize" class="form-control" min="12" max="120" />
+  <label>Count Size - {{ vis.params.countSize }}pt</label>
+  <input type="range" ng-model="vis.params.countSize" class="form-control" min="8" max="120" />
+  <label>Enable animation</label>
+  <input type="checkbox" ng-checked="vis.params.enableAnimation" ng-model="vis.params.enableAnimation"/><br>
+  <label ng-show="vis.params.enableAnimation">Animation Speed - {{ vis.params.animationSpeed }}</label>
+  <input  ng-show="vis.params.enableAnimation" type="range" ng-model="vis.params.animationSpeed" class="form-control" min="500" max="10000" />
+  <label>Background Colour - {{ vis.params.countBackground}}</label>
+  <input type="text" ng-model="vis.params.countBackground" class="form-control" />
+  <label>Colour - {{ vis.params.countColour}}</label>
+  <input type="text" ng-model="vis.params.countColour" class="form-control" />
+  <label>Icon Type - {{ vis.params.iconType}}</label>
+  <input type="text" ng-model="vis.params.iconType" class="form-control" />
+
+
+</div>

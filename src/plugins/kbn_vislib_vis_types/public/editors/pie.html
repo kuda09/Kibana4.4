@@ -1,0 +1,19 @@
+<!-- vis type specific options -->
+<div class="form-group">
+    <label>
+        <input type="checkbox" value="{{isDonut}}" ng-model="vis.params.isDonut" name="isDonut" ng-checked="vis.params.isDonut">Donut <br>
+    </label>
+</div>
+
+<div class="form-group" ng-show="vis.params.isDonut">
+    <label>Chart icon - {{ vis.params.chartIcon}}</label>
+    <input type="text" ng-model="vis.params.chartIcon" class="form-control"/>
+</div>
+
+<div class="form-group" ng-show="vis.params.isDonut">
+    <label>Icon Size - {{ vis.params.iconSize }}pt</label>
+    <input type="range" ng-model="vis.params.iconSize" class="form-control" min="12" max="120"/>
+</div>
+
+<vislib-basic-options></vislib-basic-options>
+

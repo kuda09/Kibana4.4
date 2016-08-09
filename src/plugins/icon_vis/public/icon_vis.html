@@ -1,0 +1,10 @@
+<div ng-controller="KbnMetricIconVisController" class="metric-vis">
+    <div class="metric-container" ng-repeat="metric in metrics" ng-style="{'background-color': vis.params.countBackground, 'color': vis.params.countColour}">
+        <div>
+            <div class="text" ng-style="{'font-size': vis.params.fontSize+'pt'}">{{metric.label}}  <i ng-style="{'font-size': vis.params.countSize+'pt'}">(<span class="numberAnimate">{{metric.value}}</span>)</i></div>
+        </div>
+        <div>
+            <i class="fa" ng-class="vis.params.iconType" ng-style="{'font-size': vis.params.iconSize+'pt'}"></i>
+        </div>
+    </div>
+</div>
