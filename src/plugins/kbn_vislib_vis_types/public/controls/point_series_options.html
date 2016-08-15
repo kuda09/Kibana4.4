@@ -45,5 +45,13 @@
         Scale Y-Axis to Data Bounds
       </label>
     </div>
+    <div class="form-group">
+      Enable Animation
+      <input type="checkbox" ng-model="vis.params.enableAnimation" ng-checked="vis.params.enableAnimation" />
+    </div>
+    <div class="form-group" ng-show="vis.params.enableAnimation">
+      <label for="animationSpeed">Animation Speed - {{vis.params.animationSpeed}}</label>
+      <input type="range" ng-model="vis.params.animationSpeed" id="animationSpeed" min="200" max="10000">
+    </div>
   </div>
 </div>

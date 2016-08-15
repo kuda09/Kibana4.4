@@ -6,6 +6,11 @@
 </div>
 
 <div class="form-group" ng-show="vis.params.isDonut">
+    <label>Chat Title - {{ vis.params.chartTitle }}</label>
+    <input type="text" ng-model="vis.params.chartTitle" class="form-control" />
+</div>
+
+<div class="form-group" ng-show="vis.params.isDonut">
     <label>Chart icon - {{ vis.params.chartIcon}}</label>
     <input type="text" ng-model="vis.params.chartIcon" class="form-control"/>
 </div>
@@ -13,6 +18,16 @@
 <div class="form-group" ng-show="vis.params.isDonut">
     <label>Icon Size - {{ vis.params.iconSize }}pt</label>
     <input type="range" ng-model="vis.params.iconSize" class="form-control" min="12" max="120"/>
+</div>
+
+<div class="form-group">
+    Enable Animation
+    <input type="checkbox" ng-model="vis.params.enableAnimation" ng-checked="vis.params.enableAnimation" />
+</div>
+
+<div class="form-group" ng-show="vis.params.enableAnimation">
+    <label>Animation Speed - {{ vis.params.animationSpeed }}</label>
+    <input type="range" ng-model="vis.params.animationSpeed" class="form-control" min="500" max="10000"/>
 </div>
 
 <vislib-basic-options></vislib-basic-options>

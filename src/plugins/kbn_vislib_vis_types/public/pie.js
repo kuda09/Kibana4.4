@@ -14,7 +14,10 @@ define(function (require) {
           shareYAxis: true,
           addTooltip: true,
           addLegend: true,
+          enableAnimation: true,
+          animationSpeed: 3000,
           iconSize: 40,
+          chartTitle: 'pie',
           chartIcon: 'fa-female',
           isDonut: false
         },

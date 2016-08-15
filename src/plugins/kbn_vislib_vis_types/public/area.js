@@ -17,6 +17,8 @@ define(function (require) {
           addTooltip: true,
           addLegend: true,
           smoothLines: false,
+          enableAnimation: true,
+          animationSpeed: 3000,
           scale: 'linear',
           interpolate: 'linear',
           mode: 'stacked',
